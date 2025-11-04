@@ -1,0 +1,198 @@
+.container {
+  width: min(100%, 1440px);
+  margin: auto;
+}
+/* pirveli davaleba */
+.davaleba-1-button-background {
+  background-color: plum;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.davaleba-1-button {
+  background-color: plum;
+  width: 300px;
+  height: 70px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px black, inset 2px 2px 2px 1px white;
+}
+.davaleba-1-button:active {
+  text-shadow: 1px 1px 1px black;
+  box-shadow: inset 3px 3px 2px 1px black, inset -3px -3px 2px 1px white;
+}
+/* me-2 davaleba */
+.article-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-card {
+  margin-top: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  overflow: hidden;
+  transition-property: box-shadow, overflow;
+  transition-duration: 1s;
+}
+.card-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  transition-property: filter, transform;
+  transition-duration: 1s;
+}
+.card-title {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: brown;
+}
+.article-card-price-and-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.product-price {
+  font-size: 30px;
+  color: red;
+}
+.card-button {
+  background-color: green;
+  width: 60px;
+  height: 30px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+}
+.article-card:hover {
+  box-shadow: -4px -4px 2px 1px black, inset -4px -4px 2px 1px white;
+}
+.article-card:hover .card-image {
+  filter: grayscale(100%);
+  transform: scaleX(1.5);
+}
+/* me-3 davaleba */
+.davaleba-3 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 140px;
+  letter-spacing: 20px;
+  color: red;
+  animation-name: opacity;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* me-4 davaleba */
+.spinner-container {
+  margin-block: 150px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-text {
+  font-size: 40px;
+  color: green;
+}
+.spinner-border {
+  height: 200px;
+  width: 200px;
+  border-top: 20px solid green;
+  border-right: 20px solid green;
+  border-bottom: 20px solid yellow;
+  border-left: 20px solid red;
+  border-radius: 50%;
+  animation-name: border;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+@keyframes border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner-border:hover {
+  animation-play-state: paused;
+}
+
+/* me-5 davaleba */
+header {
+  margin-top: 100px;
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  column-gap: 24px;
+}
+.header-link {
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 0%;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  transition-property: text-shadow;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.header-link:hover {
+  text-shadow: 0 0 20px pink, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+/* me-6 davaleba */
+.loading-bar-container {
+  margin-top: 100px;
+  width: 1440px;
+  height: 300px;
+  background-color: green;
+  position: relative;
+}
+.loading-bar {
+  width: 600px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid gray;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.loading-bar-progress {
+  width: 0%;
+  height: 100%;
+  background-color: blue;
+  animation-name: width;
+  animation-duration: 11s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
