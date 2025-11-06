@@ -79,7 +79,7 @@
 }
 .article-card:hover .card-image {
   filter: grayscale(100%);
-  transform: scale(1.5)
+  transform: scale(1.5);
 }
 /* me-3 davaleba */
 .davaleba-3 {
