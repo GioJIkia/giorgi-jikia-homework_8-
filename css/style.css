@@ -19,6 +19,7 @@
   color: white;
   text-shadow: 3px 3px 3px black;
   border-radius: 10px;
+  border: none;
   box-shadow: 2px 2px 2px 1px black, inset 2px 2px 2px 1px white;
 }
 .davaleba-1-button:active {
@@ -30,24 +31,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 .article-card {
-  margin-top: 100px;
   width: 400px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  transition: 1s linear;
+  padding: 20px;
+  cursor: pointer;
+}
+.card-img-box {
   overflow: hidden;
-  transition-property: box-shadow, overflow;
-  transition-duration: 1s;
+  height: 400px;
 }
 .card-image {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
-  overflow: hidden;
-  transition-property: filter, transform;
-  transition-duration: 1s;
+  transition: 1s linear;
 }
 .card-title {
   font-size: 40px;
@@ -71,11 +74,12 @@
   border-radius: 5px;
 }
 .article-card:hover {
-  box-shadow: -4px -4px 2px 1px black, inset -4px -4px 2px 1px white;
+  box-shadow: 0 0 20px pink, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 .article-card:hover .card-image {
   filter: grayscale(100%);
-  transform: scaleX(1.5);
+  transform: scale(1.5);
 }
 /* me-3 davaleba */
 .davaleba-3 {
